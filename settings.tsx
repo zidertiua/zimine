@@ -1,5 +1,10 @@
-import { AuthForm } from "../auth-form";
+import { Settings } from "../settings";
+import { ThemeProvider } from "@/lib/theme-provider";
 
-export default function AuthFormExample() {
-  return <AuthForm onLogin={(u, a) => console.log("Logged in:", u, a)} />;
+export default function SettingsExample() {
+  return (
+    <ThemeProvider>
+      <Settings />
+    </ThemeProvider>
+  );
 }
